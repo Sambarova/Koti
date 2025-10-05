@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-Ua-Compatible" content="IE=edge">
-    <meta name="v1ewport" content="width=device-width, initial-scale=1.0">
-    <title>Котики</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Котики 2</title>
        
     <style>
         body {
@@ -20,51 +20,103 @@
         background-attachment: fixed;
         min-height: 100vh;}
 
-        @media (min-width: 900px) {
-            body section {
-        color: rgb(58, 38, 3); 
-        background-color: rgb(237, 158, 61); 
-        padding: 20px;
-        margin: 20px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
-        width: 900px;
-        flex-wrap: wrap;}
-
-            .card {
-        color: #fdfbff; 
-        border-style: double;
-        width: 800px;}
-        
-            .koncy {
-        font-size: larger; 
-        color: #fdfbff ; 
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        .container {
+            width: 100%;
+            max-width: 900px;
+            padding: 0 15px;
+            box-sizing: border-box;
         }
+
+        section {
+            color: rgb(58, 38, 3); 
+            background-color: rgb(237, 158, 61); 
+            padding: 20px;
+            margin: 20px 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .card {
+            color: #fdfbff; 
+            border-style: double;
+            width: 100%;
+            padding: 15px;
+            box-sizing: border-box;
+            margin: 15px 0;
+        }
+
+        .vvedenie {
+            font-size: larger; 
+            color: #fdfbff;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .koncy {
+            font-size: larger; 
+            color: #fdfbff ; 
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        @media (min-width: 900px) {
+            section {
+                width: 900px;
+                border-radius: 10px;
+            }
+            
+            .card {
+                width: 100%;
+            }
         }
        
-        @media (min-width: 100px) and (max-width: 890px) {
-        body section {
-        color: rgb(58, 38, 3); 
-        background-color: rgb(237, 158, 61); 
-        padding: 20px;
-        margin: 20px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
-        width: 900px;
-        flex-direction: column;
-        font-size: 60px;}
-        
-        .card {
-        color: #fdfbff; border-style: double;
-        width: 800px;}
-        
-        .vvedenie {
-        font-size: larger; 
-        color: #fdfbff;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        @media (max-width: 899px) {
+            body {
+                padding: 0 10px;
+            }
+            
+            section {
+                margin: 10px 0;
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 32px !important;
+                text-align: center;
+            }
+            
+            h2 {
+                font-size: 24px;
+            }
+            
+            p, li {
+                font-size: 16px;
+            }
         }
-    }
 
-        
+        @media (max-width: 480px) {
+            section {
+                padding: 10px;
+                margin: 5px 0;
+            }
+            
+            h1 {
+                font-size: 24px !important;
+            }
+            
+            h2 {
+                font-size: 20px;
+            }
+            
+            p, li {
+                font-size: 14px;
+            }
+        }
 
     </style>
 
@@ -74,7 +126,7 @@
     <section>
         <div class="container">
             <h1 style="font-size: 55px;"> Котики правят миром: Мяучное исследование феномена</h1>
-            <img src="fd29e8a6-d599-4365-a9b9-507767c333b0.jpg" alt="Котик с сердечком" style="width: 900px;">
+            <img src="fd29e8a6-d599-4365-a9b9-507767c333b0.jpg" alt="Котик с сердечком">
         </div>
     </section>
     
@@ -153,3 +205,4 @@
         </div>     
    </section>
 </body>
+</html>
