@@ -2,55 +2,61 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-Ua-Compatible" content="IE=edge">
-    <meta name="v1ewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Котики</title>
        
     <style>
+        
+        body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        background-image: url(photo_5411358850080177874_y.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        }
+        
         @media (min-width: 900px) {
             body section {
         color: rgb(58, 38, 3); 
-        background-color: rgb(237, 158, 61); 
+        background-color: rgb(246, 172, 82); 
         padding: 20px;
         margin: 20px;
         font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
         width: 900px;
         flex-wrap: wrap;}
-        
             .card {
         color: #fdfbff; border-style: double;
         width: 800px;}
-        
             .koncy {
         font-size: larger; 
-        color: rgb(22, 114, 15); 
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
+        color: #fdfbff; 
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
         }
        
         @media (min-width: 100px) and (max-width: 890px) {
-        body section {
+            body section {
         color: rgb(58, 38, 3); 
-        background-color: rgb(237, 158, 61); 
+        background-color: rgb(246, 172, 82) ; 
         padding: 20px;
         margin: 20px;
         font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
         width: 900px;
         flex-direction: column;
         font-size: 60px;}
-        
-        .card {
+            .card {
         color: #fdfbff; border-style: double;
         width: 800px;}
-        
-        .koncy {
+            .koncy {
         font-size: larger; 
-        color: rgb(22, 114, 15); 
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #fdfbff; 
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
         }
-    }
-
-    
 
     </style>
 
@@ -58,7 +64,10 @@
 
 <body>
     <section>
-        <h1>Котики правят миром: Мяучное исследование феномена</h1>
+        <div class="container">
+            <h1>Котики правят миром: Мяучное исследование феномена</h1>
+            <img src="fd29e8a6-d599-4365-a9b9-507767c333b0.jpg" alt="Котик с сердечком" style="width: 900px;">
+        </div>
     </section>
     
     <section>
@@ -67,6 +76,7 @@
        
     
     <section>
+        <div class="container">
         <h2>1. Мурлыкающий лекарь: Целебные свойства кототерапии</h2>
             <p>Это не шутки! Наука всё чаще подтверждает то, что владельцы кошек знали интуитивно веками: эти животные оказывают мощное положительное влияние на наше здоровье.</p>
         <section class="card">
@@ -74,6 +84,7 @@
                 <p>Всё начинается с мурлыканья. Этот низкочастотный звук, который кошки издают в состоянии покоя и удовлетворения, обладает поистине магическими свойствами. Ученые полагают, что вибрации частотой от 25 до 150 Гц могут способствовать заживлению костей и мягких тканей, снижать боль и даже помогать при одышке. Это как встроенный в кота физиотерапевтический аппарат, который включается, когда он ложится вам на больное место.</p>
         </section>
             <p>Но дело не только в мурлыканье. Сам процесс поглаживания мягкой теплой шерстки снижает уровень кортизола (гормона стресса) и повышает выработку серотонина (гормона счастья). Проще говоря, пятнадцать минут с кошкой на коленях - это сеанс бесплатной и очень приятной медитации и антистресс-терапии. Исследования, например, те, что собирает Международное общество по изучению кошек (ISFM), показывают, что владельцы кошек имеют на 30% меньший риск смерти от сердечного приступа. Серьезно!</p>
+        </div>
     </section>
       
     
